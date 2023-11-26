@@ -10,9 +10,11 @@ public class Lasergun : MonoBehaviour
 
    [SerializeField] private Animator laserAnimator; 
    [SerializeField] private AudioClip laserSFX;
+   [SerializeField] private Transform laserBeamOrigin;
 
 
    private AudioSource LaserAudioSource;
+   private RaycastHit hit; 
 
    private void Awake()
    {
@@ -25,7 +27,14 @@ public class Lasergun : MonoBehaviour
       LaserAudioSource.PlayOneShot(laserSFX);
       
       // Raycast
-      
-      
+      if (Physics.Raycast(laserBeamOrigin.position, laserBeamOrigin.forward, out hit, 1500))
+      {
+         if (hit.transform.GetComponent<AsteroidHit>() != null)
+         {
+            hit.transform.GetComponent<AsteroidHit>().AsteroidDestroyed();
+         }
+         
+      } 
+
    }
 }
