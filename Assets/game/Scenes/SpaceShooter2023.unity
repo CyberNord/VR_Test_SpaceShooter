@@ -1054,6 +1054,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 338538061}
+    - targetCorrespondingSourceObject: {fileID: 3855397916406632481, guid: 342a1b253568e854f9a2e953d07332d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 338538062}
   m_SourcePrefab: {fileID: 100100000, guid: 342a1b253568e854f9a2e953d07332d3, type: 3}
 --- !u!1 &338538055 stripped
 GameObject:
@@ -1246,6 +1250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserAnimator: {fileID: 148876562}
   laserSFX: {fileID: 8300000, guid: fa5f15d5c001e1249a46f30914256f91, type: 3}
+  laserBeamOrigin: {fileID: 416206730}
 --- !u!82 &338538061
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1342,6 +1347,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &338538062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338538055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d631d2ccc40d748a1e224253d856e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originPos:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!4 &416206730 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3855397916211568731, guid: 342a1b253568e854f9a2e953d07332d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 338538054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &550831588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1934,6 +1960,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!4 &925752012 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3855397916211568731, guid: 342a1b253568e854f9a2e953d07332d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1301423909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &937910994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2541,6 +2573,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1301423916}
+    - targetCorrespondingSourceObject: {fileID: 3855397916406632481, guid: 342a1b253568e854f9a2e953d07332d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1301423917}
   m_SourcePrefab: {fileID: 100100000, guid: 342a1b253568e854f9a2e953d07332d3, type: 3}
 --- !u!1 &1301423910 stripped
 GameObject:
@@ -2733,6 +2769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserAnimator: {fileID: 1264478002}
   laserSFX: {fileID: 8300000, guid: fa5f15d5c001e1249a46f30914256f91, type: 3}
+  laserBeamOrigin: {fileID: 925752012}
 --- !u!82 &1301423916
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2829,6 +2866,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1301423917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301423910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d631d2ccc40d748a1e224253d856e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originPos:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &1326169778
 PrefabInstance:
   m_ObjectHideFlags: 0
